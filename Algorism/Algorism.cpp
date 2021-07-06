@@ -1,8 +1,14 @@
 #include <iostream>
 
-// Start of the project for testing
+#include "BinarySearch.h"
+
+using namespace algo;
+
+// Function for running and displaying console outputs
 int main()
 {
-	std::cout << "Algorism:" << std::endl;
+	// Binary Search Algorithm
+	BinarySearch::execute();
+
 	return EXIT_SUCCESS;
 }

@@ -3,3 +3,5 @@
 *.filters
 *.user
 *.sln
+*Debug
+*Release
