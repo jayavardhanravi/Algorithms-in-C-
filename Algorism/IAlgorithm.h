@@ -43,9 +43,9 @@ namespace algo
 			PRINT = 0x103
 		};
 
-		typedef std::chrono::milliseconds milli;
-		typedef std::chrono::microseconds micro;
-		typedef std::chrono::nanoseconds nano;
+		typedef std::chrono::milliseconds MILLI;
+		typedef std::chrono::microseconds MICRO;
+		typedef std::chrono::nanoseconds NANO;
 
 	protected:
 		std::chrono::high_resolution_clock::time_point startTimer, endTimer;

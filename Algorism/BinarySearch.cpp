@@ -37,7 +37,7 @@ void algo::BinarySearch::input()
 
 void algo::BinarySearch::process()
 {
-	processTimer<nano>(TIMER::START);
+	processTimer<NANO>(TIMER::START);
 	// Core Algorithm
 	int startCursor = 0, endCursor = inputData.size() - 1;
 	while (startCursor <= endCursor)
@@ -57,8 +57,8 @@ void algo::BinarySearch::process()
 			endCursor = midPosition - 1;
 		}
 	}
-	processTimer<nano>(TIMER::END);
-	std::cout << "Processing Time: " << processTimer<nano>(TIMER::PRINT) << " ns" << std::endl;
+	processTimer<NANO>(TIMER::END);
+	std::cout << "Processing Time: " << double(processTimer<NANO>(TIMER::PRINT) / 1000000.0) << " ms" << std::endl;
 }
 
 void algo::BinarySearch::output()
