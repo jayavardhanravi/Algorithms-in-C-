@@ -5,3 +5,4 @@
 *.sln
 *Debug
 *Release
+*.vscode
